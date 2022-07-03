@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>登录</title>
+  </head>
+  <body>
+    <form action="/logon/" method="post">
+      <input type="text" name="username" id="" /><br />
+      <input type="password" name="password" id="" /><br />
+      <input type="submit" value="登录" /><br />
+      {{ error }}
+      {% csrf_token %}
+    </form>
+  </body>
+</html>

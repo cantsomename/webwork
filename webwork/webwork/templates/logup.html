@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>注册</title>
+  </head>
+  <body>
+    <form action="/addUser/" method="post">
+      <input type="text" name="username" id="" /><br />
+      <input type="password" name="password" id="" /><br />
+      <input type="password" name="" id="" /><br />
+      <input type="submit" value="注册" /><br />
+      {{ error }}
+      {% csrf_token %}
+    </form>
+  </body>
+</html>
